@@ -35,8 +35,9 @@ def youtube_download(file_url):
     print(f'* 영상 설명\n\n{yt.description}')
     print(f'==================================================================')
 
-    """incoding 처리"""
+    """encoding 처리"""
     video_streams = yt.streams.filter(file_extension='mp4').get_by_itag(22)
+                                                            #Youtube itag : https://gist.github.com/rlagusals1102/c4c1fb870afeccba06cc9633af8ca9fd"""
     print(video_streams)
 
     """저장 폴더 생성"""
