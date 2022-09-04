@@ -39,7 +39,7 @@ def youtube_download(file_url):
     print(f'* 영상 설명\n\n{yt.description}')
     print(f'==================================================================')
 
-    """incoding 처리"""
+  
     video_streams = yt.streams.filter(file_extension='mp4').get_by_itag(22)
     print(video_streams)
 
