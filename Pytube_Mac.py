@@ -61,6 +61,6 @@ def youtube_download(file_url):
                            output_path='youtube_download')
 
     print('영상 다운로드 완료')
-
+    os.system("pause")
 
 youtube_download(yt_url)
